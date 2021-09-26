@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Koh Santepheap', cursive;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+     text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    display: flex;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.wrapper label{
+    display: block;
+    cursor: pointer;
+    color: purple;
+    position: relative;
+    z-index: 1;
+}
+
+nav .slider{
+    position: absolute;
+    left: 6rem;
+    bottom: 0;
+    height: 10%;
+    width: 6%;
+    background: purple;
+    border-radius: 5px;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+
+#table:checked ~ nav .slider{
+    left: 10%;
+}
+
+.form{
+    font-size: 2rem;
+    padding-right: 5vh;
+}
+.table{
+    font-size: 2rem;
+}
+
+.home-content{
+   
+    height: 93vh;
+    width: 100%;
+    background: rgb(233, 230, 230);
+    padding: 0 30px;
+}
+
+ h1{
+    color: blue;
+    font-size: 23px;
+    padding: 10px 0 3px 0;
+}
+
+section .home-content p{
+    font-size: 13px;
+}
+
+section .home-content{
+    display: none;
+}
+#form:checked ~ section .home-content{
+    display: block;
+}
+
+.main{
+    position: fixed;
+    background: #f9f9f9;
+    margin: 10px 0;
+    width: 97%;
+    height: 82%;
+}
+#texts{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+#texts span{
+    font-size: 13px;
+}
+
+#texts input{
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+#phonefield{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#phonefield span{
+    font-size: 13px;
+}
+
+#phonefield input{
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+#Names{
+    padding: 70px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#Names span{
+    font-size: 13px;
+}
+
+#Names input{
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+#basic{
+    display: block;
+    
+}
+
+
+#emailfield{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+
+#emailfield span{
+    font-size: 13px;
+}
+
+#emailfield input{
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+#reviews{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#reviews span{
+    font-size: 13px;
+}
+#reviews input{
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+.ages{
+    font-size: 15px;
+}
+
+form{
+    display:flex;
+  }
+  
+  form input{
+    padding:0.7em 1em;
+  }
+  form span{
+    padding:0.6em 1em;
+  }
+  
+  #submitinfo{
+    padding:1.5em;
+    margin:300px  400px;
+    cursor:pointer;
+    border: 1px solid green;
+    background: green;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* table start */
+
+section .table-content{
+    display: none;
+}
+
+#table:checked ~ section .table-content{
+    display: block;
+}
+
+ul{
+    margin: 50px 0;
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content:center;
+    width:100%;
+  
+  }
+  ul li{
+    padding:1em 2em .8em 2em;
+    border:1px solid black;
+  
+  }
+
+  input.imp[type="radio"]{
+    display: block;
+}
+  
+#data{
+    background-color:rgb(245, 204, 245);
+    color:black;
+    margin-left: 5px;
+
+}
+
+.feedback{
+    color: black;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
